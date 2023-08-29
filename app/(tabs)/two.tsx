@@ -31,7 +31,7 @@ export default function App(): JSX.Element {
 
   const [stories, setStories] = useState<JSX.Element[]>([]);
 
-  useEffect(() => {
+   useEffect(() => {
     const fetchCollection = async () => {
       const collectionRef = collection(db, 'stories');
       const querySnapshot = await getDocs(collectionRef);
@@ -48,6 +48,10 @@ export default function App(): JSX.Element {
           />
         );
       });
+
+        // Save the fetched stories locally
+        await AsyncStorage.setItem('localStories', JSON.stringify(fetchedStories));
+        console.log('Stories saved locally.');
 
       setStories(fetchedStories);
     };
