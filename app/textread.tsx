@@ -1,6 +1,6 @@
 import { useRoute } from '@react-navigation/native';
 import React, { useEffect, useState, useRef } from 'react';
-import { View, Text, TouchableHighlight, StyleSheet, ScrollView, Pressable  } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Pressable  } from 'react-native';
 import { doc, getDoc } from "firebase/firestore";
 import {db} from '../firebase'
 //import { BottomSheetSlideInSpec } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/TransitionSpecs';
