@@ -11,7 +11,7 @@ const Profile = () => {
     <View style={styles.container}>
      
        <Pressable  style={styles.section}>
-        <Link href = 'infocollecter'>
+        <Link href = '/infocollecter'>
        <View >
         <Text style={styles.sectionTitle}>
           <FontAwesome name='user' size={16} color="#FF0000" style={styles.icon} />

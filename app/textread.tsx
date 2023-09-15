@@ -1,6 +1,7 @@
 import { useRoute } from '@react-navigation/native';
 import React, { useEffect, useState, useRef } from 'react';
-import { View, Text, StyleSheet, ScrollView, Pressable  } from 'react-native';
+import {  StyleSheet, ScrollView, Pressable  } from 'react-native';
+import { Text, View } from '../components/Themed';
 import { doc, getDoc } from "firebase/firestore";
 import {db} from '../firebase'
 //import { BottomSheetSlideInSpec } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/TransitionSpecs';
@@ -100,7 +101,6 @@ const Chat = () => {
   onContentSizeChange={() => scrollViewRef.current?.scrollToEnd({ animated: true })}
 >
          <View>
-           <Text style={styles.objectIdText}>make a new line here </Text>
            <Text style={styles.objectIdText}>{objectId}</Text>
          </View>
 
@@ -146,7 +146,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     alignSelf:'center',
-    color:'white',
     
   },
   line: {
