@@ -115,11 +115,10 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 4,
-    color: '#fff',
+    
   },
   description: {
     fontSize: 14,
-    color: '#ccc',
   },
   tabTitle: {
     fontSize: 24,

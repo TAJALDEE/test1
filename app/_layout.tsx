@@ -52,7 +52,7 @@ function RootLayoutNav() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
         <Stack.Screen name="infocollecter"/>
-        <Stack.Screen name="introduction"/>
+        <Stack.Screen name="Introduction"/>
         <Stack.Screen name="textread" options={{
           title: 'Tab One',
           headerRight: () => (

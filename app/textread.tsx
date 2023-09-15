@@ -1,6 +1,7 @@
 import { useRoute } from '@react-navigation/native';
 import React, { useEffect, useState, useRef } from 'react';
-import { View, Text, StyleSheet, ScrollView, Pressable  } from 'react-native';
+import {  StyleSheet, ScrollView, Pressable  } from 'react-native';
+import { Text, View } from '../components/Themed';
 import { doc, getDoc } from "firebase/firestore";
 import {db} from '../firebase'
 //import { BottomSheetSlideInSpec } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/TransitionSpecs';
@@ -146,7 +147,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     alignSelf:'center',
-    color:'white',
     
   },
   line: {

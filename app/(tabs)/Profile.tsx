@@ -2,6 +2,7 @@ import React from 'react';
 import { Pressable , StyleSheet ,View} from 'react-native';
 import { Text } from '../../components/Themed';
 import { Link, useNavigation } from 'expo-router';
+import { Link as Lin } from '@react-navigation/native';
 import { FontAwesome } from '@expo/vector-icons';
 
 const Profile = () => {
@@ -11,7 +12,7 @@ const Profile = () => {
     <View style={styles.container}>
      
        <Pressable  style={styles.section}>
-        <Link href = 'infocollecter'>
+        <Link href = '/infocollecter'>
        <View >
         <Text style={styles.sectionTitle}>
           <FontAwesome name='user' size={16} color="#FF0000" style={styles.icon} />

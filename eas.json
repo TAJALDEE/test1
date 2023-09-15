@@ -1,3 +1,5 @@
+// eas build -p android --profile preview
+
 {
   "cli": {
     "version": ">= 4.1.2"
